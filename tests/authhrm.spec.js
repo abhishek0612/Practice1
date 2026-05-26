@@ -6,6 +6,7 @@ import {test,expect}  from '@playwright/test';
         await page.locator('input[name="password"]').fill('admin123');
         await page.locator('button[type="submit"]').click();
         await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
+        console.log('Tesing PR 1');
     });
 
     test('Add Employee Test',async({page})=>{
